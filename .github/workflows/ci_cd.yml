@@ -27,7 +27,7 @@ jobs:
 
       #4 Linting
       - name: Linta koden med flake8
-        run: flake8 src tests
+        run: flake8 src test
 
       #5 Kör tester
       - name: Kör testerna med pytest
