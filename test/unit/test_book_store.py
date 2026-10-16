@@ -31,7 +31,7 @@ def test_add_book(f_store):
 
 
 @pytest.mark.unit
-def test_toggle_favorite_adds_book_to_favorites(f_store,f_book):
+def test_toggle_favorite_adds_book_to_favorites(f_store, f_book):
     # Arrange - Genom fixturer
 
     # Act - Markera boken som som favorit
@@ -44,7 +44,7 @@ def test_toggle_favorite_adds_book_to_favorites(f_store,f_book):
 
 
 @pytest.mark.unit
-def test_toggle_favorite_removes_book_from_favorites(f_store,f_book):
+def test_toggle_favorite_removes_book_from_favorites(f_store, f_book):
     # Arrange - Genom fixturer.
 
     # Act - Toggla favoritmarkeringen
