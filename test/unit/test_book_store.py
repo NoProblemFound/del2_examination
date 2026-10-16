@@ -30,7 +30,8 @@ def test_toggle_favorite_adds_book_to_favorites():
     # Act - Markera boken som som favorit
     store.toggleFavorite(book.id)
 
-    # Assert - Kontrollera att boken är markerad som favorit och att den finns med i favoritlistan
+    # Assert - Kontrollera att boken är markerad som favorit
+    # och att den finns med i favoritlistan
     assert book.favorite is True
     assert book in store.favorite_books.books
 
