@@ -17,6 +17,7 @@ def test_add_book():
     assert len(store.books) == 1
     assert book.author == "Guido van Rossum"
 
+
 @pytest.mark.unit
 def test_toggle_favorite_adds_book_to_favorites():
     # Arrange - Skapa en butik och lägg till en bok.
@@ -32,6 +33,7 @@ def test_toggle_favorite_adds_book_to_favorites():
     # Assert - Kontrollera att boken är markerad som favorit och att den finns med i favoritlistan
     assert book.favorite is True
     assert book in store.favorite_books.books
+
 
 @pytest.mark.unit
 def test_toggle_favorite_removes_book_from_favorites():
