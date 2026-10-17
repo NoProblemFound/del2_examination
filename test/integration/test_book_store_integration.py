@@ -30,7 +30,7 @@ def test_toggle_favorite_twice_removes_book(f_store):
         "Ormar på ett plan"
     )
 
-    #Act - Markera och avmarkera en bok som favorit
+    # Act - Markera och avmarkera en bok som favorit
     f_store.toggleFavorite(book.id)
     f_store.toggleFavorite(book.id)
 
