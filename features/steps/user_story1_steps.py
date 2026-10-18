@@ -20,5 +20,5 @@ def verify_button(context, button_name):
 def verify_book_list(context):
     # Letar efter element som matchar div.book
     books = context.page.locator("div.book")
-    # Antalet bör vara större än 0, egentligen 10.
+    # Antalet bör vara större än 0, egentligen 13.
     assert books.count() > 0
